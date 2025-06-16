@@ -1,5 +1,3 @@
-# test_assessment.py
-
 import unittest
 import io
 import sys

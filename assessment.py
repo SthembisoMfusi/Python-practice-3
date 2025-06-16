@@ -1,5 +1,3 @@
-# assessment.py
-
 # TODO: return pattern name from user input (it can't be blank and must be a valid pattern!)
 def get_pattern()-> str:
     """

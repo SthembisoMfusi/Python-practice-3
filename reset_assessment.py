@@ -1,4 +1,3 @@
-# reset_assessment.py
 
 # This script resets the assessment.py file to its original state.
 # Run this script if you want to clear your answers and start over.
@@ -6,8 +5,7 @@
 import os
 
 # The original content of the assessment.py file
-assessment_template = """# assessment.py
-
+assessment_template = """
 # TODO: return pattern name from user input (it can't be blank and must be a valid pattern!)
 def get_pattern()-> str:
     \"\"\"
