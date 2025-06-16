@@ -5,10 +5,10 @@ def get_pattern()-> str:
     """
     Prompts the user to enter a pattern name from a predefined list.
     The function will keep asking until a valid pattern name is entered.
-    Valid patterns are: 'solid_rectangle', 'hollow_square', 'right_triangle',
+    Valid patterns are: 'solid_rectangle', 'hollow_square', 'right_triangle', 
     'inverted_right_triangle', 'checkerboard', 'diamond'.
     """
-
+    
     return ""
 
 
@@ -20,7 +20,7 @@ def get_size()->int:
     The function will ensure the input is an integer between 1 and 50.
     It will keep asking until a valid size is entered.
     """
-
+    
     return 0
 
 
@@ -30,13 +30,13 @@ def get_size()->int:
 def draw_solid_rectangle(size: int) -> None:
     """
     Draws a solid rectangle of asterisks (*) with the given size as both height and width.
-
+    
     Parameters:
         size (int): The height and width of the rectangle. Must be a positive integer.
-
+        
     Returns:
         None: Prints the rectangle pattern directly to the console.
-
+        
     Example for size = 4:
     ****
     ****
@@ -49,10 +49,10 @@ def draw_hollow_square(size: int) -> None:
     """
     Draws a hollow square pattern of asterisks (*) with the given size.
     Only the border of the square should be printed.
-
+    
     Parameters:
         size (int): The height and width of the square. Must be a positive integer.
-
+        
     Returns:
         None: Prints the hollow square pattern directly to the console.
 
@@ -68,10 +68,10 @@ def draw_hollow_square(size: int) -> None:
 def draw_right_triangle(size: int) -> None:
     """
     Draws a right-aligned triangle of asterisks (*).
-
+    
     Parameters:
         size (int): The height of the triangle. Must be a positive integer.
-
+        
     Returns:
         None: Prints the triangle pattern directly to the console.
 
@@ -86,10 +86,10 @@ def draw_right_triangle(size: int) -> None:
 def draw_inverted_right_triangle(size: int) -> None:
     """
     Draws an inverted right-aligned triangle of asterisks (*).
-
+    
     Parameters:
         size (int): The starting height of the triangle. Must be a positive integer.
-
+        
     Returns:
         None: Prints the inverted triangle pattern directly to the console.
 
@@ -105,10 +105,10 @@ def draw_checkerboard(size: int) -> None:
     """
     Draws a checkerboard pattern of 'X' and 'O' characters.
     The top-left character should always be 'X'.
-
+    
     Parameters:
         size (int): The height and width of the checkerboard. Must be a positive integer.
-
+        
     Returns:
         None: Prints the checkerboard pattern directly to the console.
 
@@ -125,10 +125,10 @@ def draw_diamond(size: int) -> None:
     """
     Draws a diamond shape made of asterisks (*).
     The size determines the widest point of the diamond.
-
+    
     Parameters:
         size (int): The height of the top half of the diamond. Must be a positive integer.
-
+        
     Returns:
         None: Prints the diamond pattern directly to the console.
 
@@ -147,11 +147,11 @@ def draw_diamond(size: int) -> None:
 def draw(pattern: str, size: int) -> None:
     """
     Main drawing function that calls the appropriate pattern-specific drawing function.
-
+    
     Parameters:
         pattern (str): The type of pattern to draw.
         size (int): The size of the pattern.
-
+        
     Returns:
         None: Prints the requested pattern directly to the console.
     """
@@ -188,10 +188,8 @@ if __name__ == "__main__":
     if pattern_param and size_param > 0:
         print(f"\nDrawing a '{pattern_param}' of size {size_param}:\n")
         draw(pattern_param, size_param)
-
-    else:
-        print("Invalid pattern or size. Please try again.")
-    #testing the fibonacci sequence function
+    
+    #Example for testing Fibonacci
     print("\n--- Fibonacci Sequence ---")
     fib_terms = 10
     print(f"The first {fib_terms} terms are: {fibonacci_sequence(fib_terms)}")

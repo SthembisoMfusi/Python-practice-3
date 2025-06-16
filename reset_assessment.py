@@ -197,10 +197,10 @@ if __name__ == "__main__":
         print(f"\\nDrawing a '{pattern_param}' of size {size_param}:\\n")
         draw(pattern_param, size_param)
     
-    # Example for testing Fibonacci
-    # print("\\n--- Fibonacci Sequence ---")
-    # fib_terms = 10
-    # print(f"The first {fib_terms} terms are: {fibonacci_sequence(fib_terms)}")
+    #Example for testing Fibonacci
+    print("\\n--- Fibonacci Sequence ---")
+    fib_terms = 10
+    print(f"The first {fib_terms} terms are: {fibonacci_sequence(fib_terms)}")
 """
 
 def main():
